@@ -51,6 +51,17 @@ body {
 /*---------------------------------------
   TYPOGRAPHY               
 -----------------------------------------*/
+#centered {
+ margin-left:auto;
+  margin-right: auto;
+  width:100%; 
+  text-align: center;
+  
+}
+
+ul {
+  list-style-type: none;
+}
 
 h2,
 h3,
@@ -100,7 +111,6 @@ p {
   color: var(--p-color);
   font-size: var(--p-font-size);
   font-weight: var(--font-weight-normal);
-  text-align: center;
 
 }
 
@@ -656,7 +666,10 @@ strong {
   padding-bottom: 100px;
   height: 100vh;
   min-height: 670px;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: -90px;
+  width: auto;
 }
 
 .hero-50 {
@@ -690,7 +703,8 @@ strong {
 }
 
 .hero-section .row {
-  position: relative;
+  text-align: center;
+  position: absolute;
   z-index: 22;
 }
 
