@@ -12,14 +12,14 @@ https://templatemo.com/tm-587-tiya-golf-club
 -----------------------------------------*/
 :root {
   --white-color:                  #ffffff;
-  --primary-color:                #81B29A;
-  --secondary-color:              #3D405B;
-  --section-bg-color:             #F4F1DE;
-  --custom-btn-bg-color:          #F2CC8F;
-  --custom-btn-bg-hover-color:    #E07A5F;
+  --primary-color:                #389c6b;
+  --secondary-color:              #a7d6b3;
+  --section-bg-color:             #e1e9d7;
+  --custom-btn-bg-color:          #59a47c;
+  --custom-btn-bg-hover-color:    #e1e9d7;
   --dark-color:                   #000000;
   --p-color:                      #717275;
-  --link-hover-color:             #F2CC8F;
+  --link-hover-color:             #a7d6b3;
 
   --body-font-family:             'DM Sans', sans-serif;
 
@@ -116,7 +116,6 @@ button {
 
 a {
   display: inline-block;
-  color: var(--secondary-color);
   text-decoration: none;
 }
 
@@ -130,10 +129,9 @@ strong {
 }
 
 
-/*---------------------------------------
-  SECTION               
+/*- SECTION               
 -----------------------------------------*/
-.section-bg {
+/*.section-bg {
   background-color: var(--section-bg-color);
 }
 
@@ -144,7 +142,7 @@ strong {
 
 .section-overlay {
   content: "";
-  background: rgba(0, 0, 0, 0) linear-gradient(rgba(39, 48, 83, 0.01) 0%, rgb(39, 48, 83) 100%) repeat scroll 0% 0%;
+  background: rgba(0, 0, 0, 0) linear-gradient(rgba(39, 48, 83, 0.01) 0%, rgba(56,156,107,100%)) repeat scroll 0% 0%;
   position: absolute;
   top: 0;
   right: 0;
@@ -155,13 +153,12 @@ strong {
 ::selection {
   background-color: var(--primary-color);
   color: var(--white-color);
-}
+} */
 
 
-/*---------------------------------------
-  ANIMATED HEADLINE               
+/*- ANIMATED HEADLINE               
 -----------------------------------------*/
-.cd-words-wrapper {
+/* .cd-words-wrapper {
   display: inline-block;
   position: relative;
   text-align: left;
@@ -354,7 +351,7 @@ strong {
     opacity: 0;
   }
 }
-
+*/
 
 /*---------------------------------------
   CUSTOM BUTTON               
@@ -406,10 +403,11 @@ strong {
 /*---------------------------------------
   NAVIGATION BAR & OFFCANVAS              
 -----------------------------------------*/
+
 .offcanvas {
   background-color: var(--primary-color);
   padding: 30px;
-}
+} 
 
 .offcanvas.offcanvas-end {
   border-left: 0;
@@ -437,15 +435,19 @@ strong {
   left: 0;
 }
 
-.sticky-wrapper.is-sticky .navbar {
-  background-color: rgb(61 64 91);
+ .sticky-wrapper.is-sticky .navbar {
+  background-color: rgba(56,156,107);
 }
 
+
 .navbar {
-  background: transparent;
+  background: var(--primary-color);
   z-index: 99;
   padding-top: 15px;
   padding-bottom: 15px;
+  position: absolute;
+  right: 0;
+  left: 0;
 }
 
 .navbar-brand,
@@ -485,14 +487,14 @@ strong {
   text-transform: uppercase;
 }
 
-.navbar-expand-lg .navbar-nav .nav-link {
-  border-radius: var(--border-radius-large);
+ .navbar-expand-lg .navbar-nav .nav-link {
+  /*border-radius: var(--border-radius-large); */
   margin: 10px;
   padding: 10px;
 }
 
 .navbar-nav .nav-link {
-  display: inline-block;
+  display: inline-block; 
   color: var(--white-color);
   font-size: var(--menu-font-size);
   font-weight: var(--font-weight-medium);
@@ -503,7 +505,7 @@ strong {
 .navbar-nav .nav-link.active, 
 .navbar-nav .nav-link:hover {
   color: var(--link-hover-color);
-}
+} 
 
 .navbar .dropdown-menu {
   background: var(--white-color);
@@ -870,7 +872,7 @@ strong {
 }
 
 .custom-block-span {
-  color: var(--secondary-color);
+  /* color: var(--secondary-color); */
   font-weight: var(--font-weight-bold);
   min-width: 110px;
   margin-right: 10px;
@@ -1058,9 +1060,9 @@ strong {
   pointer-events: none;
 }
 
-.site-footer-title {
+/* .site-footer-title {
   color: var(--secondary-color);
-}
+} */
 
 .site-footer p span {
   font-weight: var(--font-weight-medium);
@@ -1193,10 +1195,6 @@ strong {
     padding-bottom: 50px;
   }
   
-  .navbar {
-    background-color: var(--secondary-color);
-  }
-
   .navbar-nav .dropdown-menu {
     position: relative;
     left: 10px;
