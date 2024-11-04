@@ -11,8 +11,8 @@ https://templatemo.com/tm-587-tiya-golf-club
   CUSTOM PROPERTIES ( VARIABLES )             
 -----------------------------------------*/
 :root {
-  --white-color:                  #ffffff;
-  --primary-color:                #389c6b;
+  --white-color:                  rgb(253, 251, 247);
+  --primary-color:                #55996f;
   --secondary-color:              #a7d6b3;
   --section-bg-color:             #e1e9d7;
   --custom-btn-bg-color:          #59a47c;
@@ -100,6 +100,8 @@ p {
   color: var(--p-color);
   font-size: var(--p-font-size);
   font-weight: var(--font-weight-normal);
+  text-align: center;
+
 }
 
 ul li {
@@ -436,7 +438,7 @@ strong {
 }
 
  .sticky-wrapper.is-sticky .navbar {
-  background-color: rgba(56,156,107);
+  background-color: var(--primary-color);
 }
 
 
@@ -464,9 +466,9 @@ strong {
   color: var(--white-color);
 }
 
-.navbar .navbar-brand-image {
+/* .navbar .navbar-brand-image {
   filter: brightness(0) invert(1);
-}
+} */
 
 .navbar-brand-image {
   width: 48px;
@@ -933,10 +935,9 @@ strong {
 }
 
 
-/*---------------------------------------
-  MEMBERSHIP SECTION            
+/*-MEMBERSHIP SECTION            
 -----------------------------------------*/
-.membership-section .container {
+/*.membership-section .container {
   position: relative;
   z-index: 2;
 }
@@ -989,12 +990,12 @@ strong {
   border-radius: var(--border-radius-medium);
   height: 100px;
 }
-
+*/
 
 /*---------------------------------------
   CONTACT               
 -----------------------------------------*/
-.contact-form .form-floating>textarea {
+/*.contact-form .form-floating>textarea {
   border-radius: var(--border-radius-medium);
   height: 120px;
 }
@@ -1037,17 +1038,18 @@ strong {
   display: block;
   font-weight: var(--font-weight-bold);
 }
-
+*/
 
 /*---------------------------------------
   SITE FOOTER            
 -----------------------------------------*/
 .site-footer {
   position: relative;
-  padding-bottom: 200px;
+  padding-top: 200px;
+  margin: 40px;
 }
 
-.site-footer .container {
+.site-footer .container 
   position: relative;
   z-index: 2;
 }
@@ -1070,10 +1072,9 @@ strong {
 }
 
 
-/*---------------------------------------
-  CUSTOM FORM               
+/*-CUSTOM FORM               
 -----------------------------------------*/
-.custom-form .form-control {
+/* .custom-form .form-control {
   border-radius: var(--border-radius-large);
   border-width: 2px;
   box-shadow: none;
@@ -1126,14 +1127,19 @@ strong {
   margin: 12px;
   margin-left: 15px;
 }
-
-
+*/
 /*---------------------------------------
   SOCIAL ICON               
 -----------------------------------------*/
+
 .social-icon {
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding-left: 0;
+  padding-bottom: 5%;
+  display: inline-block;
+  vertical-align: auto;
+  position: absolute;
+  left:0px;
 }
 
 .social-icon-item {
@@ -1162,8 +1168,7 @@ strong {
 }
 
 
-/*---------------------------------------
-  RESPONSIVE STYLES               
+/*-RESPONSIVE STYLES               
 -----------------------------------------*/
 @media screen and (max-width: 991px) {
   h1 {
@@ -1221,7 +1226,7 @@ strong {
     margin-bottom: 82px;
   }
 
-  .events-listing-section {
+ /* .events-listing-section {
     margin-bottom: 50px;
   }
 
@@ -1248,10 +1253,10 @@ strong {
   .section-bg-image-block {
     padding: 30px;
   }
-
-  .site-footer {
-    padding-top: 20px;
-    padding-bottom: 100px;
+*/
+ .site-footer {
+    padding-top: 50px;
+    padding-bottom: 20px;
   }
 }
 
